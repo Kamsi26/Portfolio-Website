@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamsiyochukwu Obijiofor | Full-Stack Developer & Educator</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader-logo">
+        <span class="char-outline">K</span>
+        <span class="char-outline">D</span>
+        <span class="char-outline">O</span>
+      </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kamsi.D</a>
+        <div class="d-flex align-items-center">
+          <!-- Mobile theme toggle -->
+          <button
+            id="theme-toggle-mobile"
+            class="btn nav-link p-0 d-lg-none me-2"
+            aria-label="Toggle theme"
+          >
+            <i id="theme-toggle-icon-mobile" class="fas fa-moon"></i>
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item d-none d-lg-flex align-items-center ms-lg-2">
+              <button
+                id="theme-toggle"
+                class="btn nav-link p-0"
+                aria-label="Toggle theme"
+              >
+                <i id="theme-toggle-icon" class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <!-- HERO -->
+      <header
+        class="hero-section vh-100 d-flex flex-column justify-content-center"
+      >
+        <div class="container text-start">
+          <div class="hero-content-wrapper">
+            <h1 class="main-hero-title">
+              <span id="greeting-text">Hello</span> World!
+              <br />
+              I'm Kamsiyochukwu Obijiofor
+            </h1>
+            <p class="hero-subtitle lead">
+                | Full-Stack Web Developer • Data
+                Scientist • ML Practitioner • System Administrator
+              </p>
+            <div class="mt-5 hero-buttons d-flex flex-column align-items-start">
+              <a href="#projects" class="btn btn-light btn-lg mb-3"
+                >My Projects</a
+              >
+              <a href="#about" class="btn btn-outline-light btn-lg">About Me</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- INTRO -->
+      <section id="intro" class="py-5">
+        <div class="container">
+          <h2 class="display-7 fw-bold" data-aos>
+            I'm Kamsi, and I don't just work in tech — I run it from the
+            classroom to the cloud. I build powerful digital products, teach
+            tech with surgical precision, and design systems that scale.
+          </h2>
+        </div>
+      </section>
+
+      <!-- SCROLLING MARQUEE -->
+      <div class="marquee-section">
+        <div class="marquee-content">
+          <span>Full-Stack Web Developer</span>
+          <span class="star-divider">*</span>
+          <span>Machine Learning Practitioner</span>
+          <span class="star-divider">*</span>
+          <span>Cisco Certified Network Associate</span>
+          <span class="star-divider">*</span>
+          <span>Educator</span>
+          <span class="star-divider">*</span>
+          <span>Systems Architect</span>
+          <span class="star-divider">*</span>
+          <span>Data Science</span>
+          <span class="star-divider">*</span>
+          <span>A+ Certified Technician</span>
+          <span class="star-divider">*</span>
+          <span>Full-Stack Web Developer</span>
+          <span class="star-divider">*</span>
+          <span>Machine Learning Practitioner</span>
+          <span class="star-divider">*</span>
+          <span>Cisco Certified Network Associate</span>
+          <span class="star-divider">*</span>
+          <span>Educator</span>
+          <span class="star-divider">*</span>
+          <span>Systems Architect</span>
+          <span class="star-divider">*</span>
+          <span>Data Science</span>
+          <span class="star-divider">*</span>
+          <span>A+ Certified Technician</span>
+          <span class="star-divider">*</span>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <section id="about" class="py-5">
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col-12" data-aos="fade-up">
+              <h2 class="section-title">
+                <i class="fas fa-user-astronaut me-3"></i>What I Do
+              </h2>
+            </div>
+          </div>
+          <div class="row align-items-stretch mt-4 g-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <h3 class="mb-3">
+                <i class="fas fa-cogs me-2"></i> Tech Builder | Systems
+                Architect
+              </h3>
+              <p class="text-muted">
+                I've designed and deployed full-scale platforms that blend UI
+                beauty, backend brains, and devops muscle, from multi-user
+                marketplaces to internal reporting tools.
+              </p>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="mb-3">
+                <i class="fas fa-chalkboard-teacher me-2"></i> Educator |
+                Curriculum Builder
+              </h3>
+              <p class="text-muted">
+                I'm not just a teacher — I'm a tech translator. I take advanced
+                concepts and break them down to real talk, real code, and real
+                results for learners of all levels.
+              </p>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="mb-3">
+                <i class="fas fa-network-wired me-2"></i> Network &
+                Infrastructure
+              </h3>
+              <p class="text-muted">
+                Yup — I've also got network-level muscle. In the NOC, I manage
+                servers and devices, troubleshoot connectivity, and configure
+                core network services like DHCP, NAT, and static routes.
+              </p>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="mb-3">
+                <i class="fas fa-brain me-2"></i> Data Science & Analysis
+              </h3>
+              <p class="text-muted">
+                I run a full 8-week beginner-friendly Data Science course using
+                Python, teaching the full analytics pipeline from descriptive to
+                prescriptive analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="py-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-6" data-aos="fade-up">
+              <div class="skill-box">
+                <h3 class="mb-3">
+                  <i class="fas fa-certificate me-2"></i> Certifications
+                </h3>
+                <p class="lead">CCNA & CompTIA A+ Certified</p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-box">
+                <h3 class="mb-3">
+                  <i class="fas fa-user-check me-2"></i> Core Expertise
+                </h3>
+                <p class="lead">
+                  Full-Stack Developer • Data Scientist • ML Practitioner •
+                  System Administrator
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY ME -->
+      <section id="why-me" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5" data-aos="fade-up">
+            <i class="fas fa-star me-3"></i>Why Me?
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up">
+              <div class="why-card">
+                <div class="icon-wrapper mb-3"><i class="fas fa-code"></i></div>
+                <h4>Contextual Code</h4>
+                <p>
+                  My code comes with context. I explain every bit, not just make
+                  it "work."
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="why-card">
+                <div class="icon-wrapper mb-3">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4>User-Ready Apps</h4>
+                <p>
+                  My apps are user-ready: From subscription flows to animations,
+                  I build with UX in mind.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="why-card">
+                <div class="icon-wrapper mb-3">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h4>Scalable Projects</h4>
+                <p>
+                  My projects scale: Firebase, React, Node — I design like a
+                  startup CTO.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="why-card">
+                <div class="icon-wrapper mb-3">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h4>Effective Teaching</h4>
+                <p>
+                  My students learn and retain. Whether they're 8 or 48, I meet
+                  them where they are.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="py-5">
+        <br />
+        <br />
+        <div class="container">
+          <h2 class="section-title text-center mb-5" data-aos="fade-up">
+            <i class="fas fa-project-diagram me-3"></i>My Projects
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6 project-card-container" data-aos="fade-up">
+              <div class="project-card">
+                <img src="assets/images/korrektfarmer.png" alt="KorrektFarmer" class="img-fluid" />
+                <div class="project-info">
+                  <h3>KorrektFarmer</h3>
+                  <p>
+                    A feature-rich digital marketplace with three user roles, a
+                    premium paywalled market, and a Paystack subscription system
+                    built on Firebase.
+                  </p>
+                  <a href="#" class="btn btn-outline-light"
+                    >Visit <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 project-card-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-card">
+                <img src="assets/images/alana.png" alt="Alana Green" class="img-fluid" />
+                <div class="project-info">
+                  <h3>Alana Green</h3>
+                  <p>
+                    A clean, animation-rich React site with serverless backend
+                    integration, built for a premium eco-conscious clientele.
+                  </p>
+                  <a href="#" class="btn btn-outline-light"
+                    >Visit <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 project-card-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-card">
+                <img
+                  src="assets/images/gojo.jpg"
+                  alt="Daily Staff Report"
+                  class="img-fluid"
+                />
+                <div class="project-info">
+                  <h3>Daily Staff Report System</h3>
+                  <p>
+                    A React web app for daily task reporting, built for low-end
+                    devices with auth-based access and automated PDF report
+                    generation via Firebase.
+                  </p>
+                  <a href="#" class="btn btn-outline-light"
+                    >Visit <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 project-card-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="project-card">
+                <img
+                  src="assets/images/obito.jpg"
+                  alt="Data Science Project"
+                  class="img-fluid"
+                />
+                <div class="project-info">
+                  <h3>Fitbit-style Dataset Project</h3>
+                  <p>
+                    A classroom data science project teaching the full analytics
+                    pipeline—from descriptive to prescriptive—using Python,
+                    Pandas, and Jupyter notebooks.
+                  </p>
+                  <a href="#" class="btn btn-outline-light"
+                    >Visit <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="tech-stack" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5" data-aos="fade-up">
+            <i class="fas fa-layer-group me-3"></i>Tech Stack At A Glance
+          </h2>
+          <div class="row g-4 text-center">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="stack-category">
+                <h5>Frontend</h5>
+                <p>React, HTML, CSS (Grid/Flexbox), Bootstrap, jQuery, AOS</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="stack-category">
+                <h5>Backend</h5>
+                <p>Firebase (Firestore, Auth, Functions), Node.js, PHP</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="stack-category">
+                <h5>Data Science</h5>
+                <p>Python, Pandas, Seaborn, Scikit-learn, Jupyter</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="stack-category">
+                <h5>Infra & DevOps</h5>
+                <p>NAT, DHCP, Routing, GitHub Actions, CI/CD</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="stack-category">
+                <h5>Tools</h5>
+                <p>VS Code, Anaconda, Postman, Canva, Google Workspace</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="py-5">
+        <br />
+        <br />
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">
+              <i class="fas fa-star me-3"></i>Let's Build Something Amazing
+            </h2>
+            <p class="lead text-muted">
+              You're here because you need a builder, a leader, or a guide.
+              Whether you're launching a startup, training a team, or scaling
+              your platform — I bring clarity, performance, and strategy to
+              every project.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-8 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <form action="https://formspree.io/f/your_form_id" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-light btn-lg">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-5">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Kamsiyochukwu Obijiofor</h3>
+        <ul class="nav justify-content-center mb-4">
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link px-2">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link px-2">Contact</a>
+          </li>
+        </ul>
+        <div class="socials my-4">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Kamsiyochukwu Obijiofor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Animate On Scroll -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- 3D Background Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
