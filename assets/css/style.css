@@ -620,3 +620,134 @@ body:not(.dark-mode) .hero-section .btn-outline-light:hover {
   background-color: #fff;
   color: var(--accent-color);
 }
+/* Contact Action Buttons - Theme Consistent Styling */
+.contact-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  font-family: var(--font-family);
+}
+
+.contact-action-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color-2),
+    transparent
+  );
+  transition: left 0.5s ease;
+  z-index: 1;
+}
+
+.contact-action-btn:hover::before {
+  left: 100%;
+}
+
+.contact-action-btn:hover {
+  transform: translateY(-10px) rotateY(5deg);
+  border-color: var(--accent-color);
+  box-shadow: 0 25px 50px var(--shadow-color);
+}
+
+.btn-icon-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-icon-wrapper i {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+.btn-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.btn-content h4 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+  font-family: var(--font-family);
+}
+
+.btn-content p {
+  margin: 0;
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+
+/* Individual button color schemes */
+.whatsapp-btn .btn-icon-wrapper i {
+  color: #25d366;
+}
+
+.whatsapp-btn:hover .btn-icon-wrapper i {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+.email-btn .btn-icon-wrapper i {
+  color: var(--accent-color);
+}
+
+.email-btn:hover .btn-icon-wrapper i {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+.call-btn .btn-icon-wrapper i {
+  color: var(--accent-color-2);
+}
+
+.call-btn:hover .btn-icon-wrapper i {
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+/* Hover effects for button content */
+.contact-action-btn:hover .btn-content h4 {
+  color: var(--text-color);
+}
+
+.contact-action-btn:hover .btn-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-action-btn {
+    padding: 30px 15px;
+  }
+  
+  .btn-icon-wrapper i {
+    font-size: 2.5rem;
+  }
+  
+  .btn-content h4 {
+    font-size: 1.1rem;
+  }
+}
