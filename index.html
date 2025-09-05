@@ -24,18 +24,9 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
   </head>
   <body>
-    <div id="preloader">
-      <div class="loader-logo">
-        <span class="char-outline">K</span>
-        <span class="char-outline">D</span>
-        <span class="char-outline">O</span>
-      </div>
-    </div>
-
-    <div class="cursor"></div>
-
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
@@ -445,7 +436,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="py-5">
+     <section id="contact" class="py-5">
         <br />
         <br />
         <div class="container">
@@ -466,42 +457,52 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <form action="https://formspree.io/f/your_form_id" method="POST">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <input
-                      type="email"
-                      name="email"
-                      class="form-control"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
+              <!-- Contact Action Buttons -->
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                  <a 
+                    href="https://wa.me/+2349047122822?text=Hello%20Kamsi!%20I%20found%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20project%20with%20you.%20Could%20we%20schedule%20a%20call?" 
+                    target="_blank" 
+                    class="contact-action-btn whatsapp-btn"
+                  >
+                    <div class="btn-icon-wrapper">
+                      <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="btn-content">
+                      <h4>WhatsApp</h4>
+                      <p>Quick Chat</p>
+                    </div>
+                  </a>
                 </div>
-                <div class="mb-3">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    rows="5"
-                    placeholder="Your Message"
-                    required
-                  ></textarea>
+                <div class="col-md-4 col-sm-6">
+                  <a 
+                    href="mailto:kobijiofor@gmail.com?subject=Project%20Inquiry%20-%20Portfolio%20Contact&body=Hello%20Kamsi,%0A%0AI%20came%20across%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20potential%20project%20with%20you.%0A%0AProject%20Details:%0A-%20Project%20Type:%0A-%20Timeline:%0A-%20Budget%20Range:%0A-%20Additional%20Requirements:%0A%0APlease%20let%20me%20know%20when%20would%20be%20a%20good%20time%20to%20discuss%20further.%0A%0ABest%20regards," 
+                    class="contact-action-btn email-btn"
+                  >
+                    <div class="btn-icon-wrapper">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="btn-content">
+                      <h4>Email</h4>
+                      <p>Detailed Inquiry</p>
+                    </div>
+                  </a>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-light btn-lg">
-                    Send Message <i class="fas fa-paper-plane"></i>
-                  </button>
+                <div class="col-md-4 col-sm-6">
+                  <a 
+                    href="tel:+15133490386" 
+                    class="contact-action-btn call-btn"
+                  >
+                    <div class="btn-icon-wrapper">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="btn-content">
+                      <h4>Call</h4>
+                      <p>Direct Contact</p>
+                    </div>
+                  </a>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
