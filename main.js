@@ -138,24 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Custom Cursor
-  const cursor = document.querySelector('.cursor');
-  window.addEventListener("mousemove", (e) => {
-    gsap.to(cursor, {
-      x: e.clientX,
-      y: e.clientY,
-      duration: 0.2,
-      ease: "power2.out",
-    });
-  });
-
-  // Cursor Grow on Hover
-  const interactiveElements = document.querySelectorAll("a, button");
-  interactiveElements.forEach((el) => {
-    el.addEventListener("mouseenter", () => cursor.classList.add("grow"));
-    el.addEventListener("mouseleave", () => cursor.classList.remove("grow"));
-  });
-
   // Animate On Scroll Initialization
   AOS.init({
     duration: 1000,
